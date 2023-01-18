@@ -3,7 +3,9 @@ Translation interface for C++
 
 ## build on Linux
 ```bash
-bash build.sh
+go build -o libGoInterface.so -buildmode=c-shared cmd\main.go
 ```
 ## build on Windows
-Double click build.bat
+```bash
+go build -o libGoInterface.dll -buildmode=c-shared cmd\main.go
+```
